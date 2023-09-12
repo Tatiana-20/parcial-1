@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>punto 2</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+          background-color: #000000;
+          padding: 10px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        section nav, section article{
+            min-height: 300px;
+            height: 100%;
+        }
+        nav section nav{
+            width: 50%;
+            height: 100%;
+        }
+
+        nav {
+          float: left;
+          width: 30%;
+          background: #ccc;
+          padding: 10px;
+        }
+        
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+        }
+
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        article aside{
+            width: 100%;
+        }
+        
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h4><a href="index.html">volver</a></h4>
+<header>
+  <h2>Encabezado de pagina</h2>
+</header>
+
+<section>
+  <nav>
+    <section>
+        <nav>
+            <h2>Aside</h2>
+            <p>Informacion no tan relevante</p>
+        </nav>
+        <nav>
+            <h2>Menu vertical</h2>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Articulo 1</a></li>
+                <li><a href="">Articulo 2</a></li>
+                <li><a href="">Articulo 3</a></li>
+                <li><a href="">Articulo 4</a></li>
+            </ul>
+        </nav>
+    </section>
+  </nav>
+
+  <article>
+    <aside>
+        <header>
+            Encabezado de articulo 1
+        </header>
+        <h3>Noticia 1</h3>
+        <p>Contenido de articulo 1</p>
+    </aside>
+
+    <aside>
+        <header>
+            Encabezado de articulo 2
+        </header>
+        <h3>Noticia 2</h3>
+        <p>Contenido de articulo 2</p>
+    </aside>
+
+    <aside>
+        <header>
+            Encabezado de articulo 3
+        </header>
+        <h3>Noticia 3</h3>
+        <p>Contenido de articulo 3</p>
+    </aside>
+    
+  </article>
+</section>
+
+</body>
+</html>
